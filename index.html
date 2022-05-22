@@ -6,32 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="/style/index.css">
 </head>
 
 <body>
     <div id="navbar">
-        <p>Batch01 -</p>
-        <p>Batch02 -</p>
     </div>
-    <button>
-        <a href="/dashboard.html">Dashboard</a>
-    </button>
-    <h1>Add Student Data</h1>
-    <div id="hey">
-        <form id="students_data" onsubmit="storeData(event)">
-            <input type="text" id="name" placeholder="Enter the Name">
-            <br><br>
-            <input type="text" id="cource" placeholder="Enter the cource">
-            <br><br>
-            <input type="number" id="unit" placeholder="Enter the unit">
-            <br><br>
-            <input type="url" id="image" placeholder="image url">
-            <br><br>
-            <input type="number" id="batch" placeholder="Ft-web Batch No.">
-            <br><br>
-            <input type="submit" />
+    <br>
+    <button><a href="dashboard.html">Dashboard</a></button>
+    <div id="container">
+        <h2>Student Details Form</h2>
+        <form id="form" onsubmit="storeData(event)">
+            <input type="text" id="name" placeholder="name">
             <br>
+            <input type="text" id="course" placeholder="course">
+            <br>
+            <input type="number" id="unit" placeholder="unit">
+            <br>
+            <input type="text" id="image" placeholder="imageUrl">
+            <br>
+            <input type="text" id="batch" placeholder="batch">
+            <br>
+            <input type="submit" id="submit">
         </form>
     </div>
 </body>
